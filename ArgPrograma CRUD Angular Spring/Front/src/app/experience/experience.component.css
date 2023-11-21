@@ -1,0 +1,28 @@
+.container{
+    border: black solid 5px;
+    padding: 10px;
+}
+
+.exp-container {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center align items vertically within the flex container */
+    border-bottom: black solid 2px;
+    transition: background-color 0.3s ease;
+  }
+
+.exp-container:hover {
+    /* Add your hover effect styles here */
+    /* For example: */
+    background-color: rgb(99, 99, 178);
+    /* ... */
+}
+
+  
+  .start-date, .end-date {
+    margin-right: 10px; /* Add optional spacing between items */
+  }
+  
+  .title, .institution {
+    margin-left: 10px; /* Add optional spacing between items */
+  }
+  

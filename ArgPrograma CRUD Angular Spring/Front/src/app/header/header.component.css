@@ -1,0 +1,34 @@
+.my-img{
+  margin: 25px;
+    width: 150px;
+    transition: ease 0.3s;
+}
+
+.my-img:hover{
+  transform: scale(1.1);
+}
+
+.header {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Align items to start and end of the flex container */
+  align-items: center; /* Center align items vertically within the flex container */
+}
+
+.left-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Align icons to the end of the container */
+  }
+  
+  .icons-container {
+    display: flex; /* Create a flex container for the icons */
+  }
+  
+  .icons-container a {
+    margin-right: 10px; /* Adjust the value to increase or decrease the separation between icons */
+  }
+  
+  .left-header button {
+    margin-left: 10px; /* Adjust the value to increase or decrease the separation between icons and button */
+  }
+  

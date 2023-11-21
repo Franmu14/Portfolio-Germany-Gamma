@@ -1,0 +1,34 @@
+<div class="container" *ngIf="isLogged">
+    <div class="row">
+        <div class="col">
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="urlimagen">URL del logo</label>
+                    <input type="text" class="form-control" id="urlimagen" name="urlimagen"
+                    [(ngModel)]="education.urlimagen" required>
+                </div>
+                <div class="form-group">
+                    <label for="titulo">Titulo</label>
+                    <input type="text" class="form-control" id="titulo" name="titulo"
+                    [(ngModel)]="education.titulo" required>
+                </div>
+                <div class="form-group">
+                    <label for="fecha">Fecha</label>
+                    <input type="text" class="form-control" id="fecha" name="fecha"
+                    [(ngModel)]="education.fecha" required>
+                </div>
+                <div class="form-group">
+                    <label for="institucion">Institución</label>
+                    <input type="text" class="form-control" id="institucion" name="institucion"
+                    [(ngModel)]="education.institucion" required>
+                </div>
+                <div class="form-group">
+                    <label for="descripcion">Descripción</label>
+                    <textarea name="descripcion" id="descripcion" rows="5" [(ngModel)]="education.descripcion" required></textarea>
+                </div>
+                <button type="button" class="btn btn-outline-danger" (click)="closeediting.emit(false)" >Cancelar</button>
+                <button class="btn btn-outline-success btn-block" [disabled]="!f.valid">Actualizar</button>
+            </form>
+        </div>
+    </div>
+</div>

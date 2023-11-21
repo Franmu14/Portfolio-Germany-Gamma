@@ -50,7 +50,7 @@ app.put("/update", (req, res) => {
   const id = req.body.id;
   const foot = req.body.foot;
   db.query(
-    "UPDATE employees SET foot = ? WHERE id = ?",
+    "UPDATE players SET foot = ? WHERE id = ?",
     [wage, id],
     (err, result) => {
       if (err) {
